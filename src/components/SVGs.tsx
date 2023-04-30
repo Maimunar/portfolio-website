@@ -49,3 +49,43 @@ export const LinkedinSVG = () => (
     <circle cx="4" cy="4" r="2"></circle>
   </svg>
 );
+
+export const DownArrowSVG = () => (
+  <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+    <g>
+      <title>Layer 1</title>
+      <ellipse
+        cx="50"
+        cy="50"
+        id="svg_1"
+        rx="49.5"
+        ry="49.5"
+        stroke="#748a50"
+        transform="matrix(1 0 0 1 0 0)"
+      />
+      <line
+        fill="none"
+        id="svg_4"
+        points="null"
+        stroke="#748a50"
+        strokeWidth="3"
+        x1="50.9"
+        x2="16.2"
+        y1="74.16"
+        y2="39.36"
+      />
+      <line
+        fill="none"
+        id="svg_5"
+        points="null"
+        stroke="#748a50"
+        strokeWidth="3"
+        transform="matrix(1 0 0 1 0 0) matrix(0.00869538 0.999962 -0.999962 0.00869538 122.229 -10.6633)"
+        x1="83.84"
+        x2="49.14"
+        y1="73.72"
+        y2="38.92"
+      />
+    </g>
+  </svg>
+);
