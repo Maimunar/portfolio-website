@@ -37,3 +37,22 @@
   align-items: center;
   gap: 12px;
 }
+
+@media (max-width: 800px) {
+  .contacts-wrapper h1::after {
+    display: none;
+  }
+
+  .contacts-wrapper h1,
+  .contacts-wrapper h2,
+  .contacts-text-container {
+    margin-left: 1.25rem;
+  }
+
+  .contacts-wrapper h1 {
+    font-size: 2.25rem;
+  }
+  .contacts-wrapper h2 {
+    font-size: 1.25rem;
+  }
+}

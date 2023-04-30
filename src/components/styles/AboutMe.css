@@ -34,3 +34,18 @@
   max-width: 45%;
   margin: 1rem 1rem 0 4rem;
 }
+
+@media (max-width: 800px) {
+  .about-me-wrapper h1::after {
+    display: none;
+  }
+
+  .about-me-container {
+    flex-direction: column-reverse;
+  }
+
+  .about-me-text-container {
+    max-width: 100%;
+    text-align: center;
+  }
+}

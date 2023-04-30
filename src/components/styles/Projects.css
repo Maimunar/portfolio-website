@@ -105,3 +105,35 @@
 .project-right .project-text-container ul li:first-child {
   margin-right: 1rem;
 }
+
+@media (max-width: 800px) {
+  .projects-wrapper {
+    margin-top: 5rem;
+  }
+
+  .projects-wrapper h1::before {
+    display: none;
+  }
+
+  .project {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 1rem 3.5rem 1rem;
+  }
+
+  .project-image {
+    max-width: 300px;
+    max-height: 180px;
+  }
+
+  .project-title,
+  .project-description-container,
+  .project-text-container ul,
+  .project-links {
+    position: static;
+  }
+
+  .project-text-container ul {
+    flex-wrap: wrap;
+  }
+}
