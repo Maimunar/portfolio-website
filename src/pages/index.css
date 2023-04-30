@@ -1,0 +1,52 @@
+.socials {
+  position: fixed;
+  bottom: 0;
+}
+
+.socials::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 25px auto 0 auto;
+  background-color: var(--secondary);
+}
+
+.socials svg {
+  width: 30px;
+  stroke: var(--secondary);
+}
+
+.socials svg:hover {
+  stroke: var(--white);
+}
+
+.left {
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  right: 20px;
+}
+
+.right a {
+  writing-mode: vertical-rl;
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.right a:hover {
+  color: var(--white);
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--primary);
+}

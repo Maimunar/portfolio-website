@@ -1,0 +1,79 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes bounce {
+  45% {
+    transform: translateY(0%) translateX(-20%);
+  }
+  60% {
+    transform: translateY(-15%) translateX(-15%);
+  }
+  80% {
+    transform: translateY(0%) translateX(-10%);
+  }
+  90% {
+    transform: translateY(-7%) translateX(-5%);
+  }
+  100% {
+    transform: translateY(0%) translateX(0%);
+  }
+}
+
+.introduction {
+  height: 100vh;
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.introduction h1 {
+  margin: 25vh 0 1rem 0;
+  animation: appear 0.5s linear;
+}
+
+.introduction h2 {
+  margin: 1rem 0;
+  animation: bounce 1s linear 0.9s forwards;
+  transform: translateY(-1000px) translateX(-30%) rotate(-30deg);
+}
+
+.introduction p {
+  margin: 1rem 0;
+  font-weight: 800;
+  color: var(--primary);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 12em;
+  animation: type 2s steps(60, end) 2.4s backwards;
+}
+
+.introduction a {
+  position: relative;
+  margin-top: 25vh;
+  opacity: 0;
+  animation: appear 0.5s linear 4.4s forwards;
+}
+
+.introduction svg * {
+  fill: var(--black);
+  stroke: var(--primary);
+  cursor: pointer;
+}
+
+.introduction svg:hover * {
+  stroke: var(--white);
+}

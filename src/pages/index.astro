@@ -1,9 +1,13 @@
 ---
 // Component Imports
-import Counter from '../components/Counter';
-const someProps = {
-	count: 0,
-};
+import Navbar from '../components/Navbar';
+import Introduction from '../components/Introduction'
+import AboutMe from '../components/AboutMe'
+import Projects from '../components/Projects'
+import ContactMe from '../components/ContactMe';
+import { GithubSVG, LinkedinSVG }from '../components/SVGs';
+import './globals.css'
+import './index.css'
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -15,22 +19,32 @@ const someProps = {
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<style>
-			html,
-			body {
-				font-family: system-ui;
-				margin: 0;
-			}
-			body {
-				padding: 2rem;
-			}
-		</style>
 	</head>
 	<body>
+
+
+    <Navbar/>
+    <section class="socials left">
+      <a target="_blank" href="https://github.com/Maimunar">
+        <GithubSVG />
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/aleksandar-ivanov-1a35981a1/">
+        <LinkedinSVG/>
+      </a>
+    </section>
+
+    <section class="socials right">
+      <a href="mailto:aleksander.iv2000@gmail.com">aleksander.iv2000@gmail.com</a>
+    </section>
+
 		<main>
-			<Counter {...someProps} client:visible>
-				<h1>Hello, React!</h1>
-			</Counter>
+      <Introduction client:only="react"/>   
+       <AboutMe client:only="react"/>
+      <Projects />
+      <ContactMe /> 
+      <footer>
+        <a target="_blank" href="https://github.com/Maimunar/portfolio-website">Designed & Built by Aleksandar Ivanov</a>
+      </footer>
 		</main>
 	</body>
 </html>

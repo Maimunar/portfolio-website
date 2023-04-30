@@ -1,0 +1,107 @@
+.projects-wrapper {
+  margin: 20rem 0 15rem 0;
+}
+
+.projects-wrapper h1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 3rem;
+  margin: 1rem 5rem 7.5rem 5rem;
+}
+
+.projects-wrapper h1::before {
+  margin-right: 2rem;
+  content: "";
+  display: block;
+  width: 380px;
+  height: 2px;
+  background-color: var(--white);
+}
+
+.project {
+  margin: 2rem 4rem 7.5rem 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.project-image {
+  max-width: 622px;
+  max-height: 350px;
+  width: auto;
+  height: auto;
+  border-radius: 6px;
+}
+
+.project-text-container {
+  width: clamp(150px, 75%, 500px);
+  margin: 0 0 0 2rem;
+}
+
+.project-title {
+  font-size: 1.75rem;
+  text-align: right;
+  position: relative;
+  right: 75px;
+}
+
+.project-description-container {
+  border: 1px solid var(--darkgreen);
+  padding: 0.3rem 1rem;
+  border-radius: 3px;
+  background-color: var(--primary);
+  position: relative;
+  right: 75px;
+  text-align: right;
+}
+
+.project-text-container ul {
+  display: flex;
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0;
+  position: relative;
+  right: 75px;
+  flex-direction: row-reverse;
+}
+
+.project-text-container ul li {
+  list-style-type: none;
+  margin-right: 1rem;
+  color: var(--primary);
+}
+
+.project-text-container ul li:first-child {
+  margin-right: 0;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5px;
+  position: relative;
+  right: 75px;
+}
+.project-links svg {
+  width: 35px;
+  stroke: var(--secondary);
+}
+.project-links svg:hover {
+  stroke: var(--white);
+}
+
+.project-right {
+  flex-direction: row-reverse;
+}
+
+.project-right .project-title,
+.project-right .project-description-container,
+.project-right .project-text-container ul,
+.project-right .project-links {
+  text-align: left;
+  flex-direction: row;
+  right: -75px;
+}
+
+.project-right .project-text-container ul li:first-child {
+  margin-right: 1rem;
+}

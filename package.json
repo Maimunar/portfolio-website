@@ -10,11 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^2.1.1",
+    "@frank-mayer/react-tag-cloud": "^1.2.1",
+    "@types/react": "^18.0.10",
+    "@types/react-dom": "^18.0.5",
     "astro": "^2.3.2",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "@astrojs/react": "^2.1.1",
-    "@types/react": "^18.0.10",
-    "@types/react-dom": "^18.0.5"
+    "react-dom": "^18.1.0"
   }
 }

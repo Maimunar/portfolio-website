@@ -1,0 +1,26 @@
+nav {
+  top: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  z-index: 100;
+
+  justify-content: flex-end;
+  backdrop-filter: blur(2px);
+  position: fixed;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 0.5rem;
+  align-self: center;
+  color: var(--white);
+}
+
+nav a:last-child {
+  margin-right: 25px;
+}
+
+nav a:hover {
+  color: var(--secondary);
+}
