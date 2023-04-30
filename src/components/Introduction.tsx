@@ -9,7 +9,7 @@ const Introduction = () => {
       <DancingLines></DancingLines>
 
       <h1>Hello</h1>
-      <h2>I am Alex</h2>
+      <h2>I am Aleksandar</h2>
       <p>a Software Engineer</p>
       <a href="#about-me">
         <DownArrowSVG />

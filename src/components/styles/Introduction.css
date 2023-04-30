@@ -69,11 +69,12 @@
 }
 
 .introduction svg * {
-  fill: var(--black);
+  fill: var(--primary);
   stroke: var(--primary);
   cursor: pointer;
 }
 
 .introduction svg:hover * {
   stroke: var(--white);
+  fill: var(--white);
 }
