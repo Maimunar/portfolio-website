@@ -56,3 +56,9 @@
     font-size: 1.25rem;
   }
 }
+
+@media (max-width: 450px) {
+  .contacts-wrapper {
+    margin-bottom: 5rem;
+  }
+}

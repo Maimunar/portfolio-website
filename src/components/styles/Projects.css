@@ -137,3 +137,26 @@
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 450px) {
+  .projects-wrapper {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .project-title,
+  .project-description-container,
+  .project-text-container ul,
+  .project-links {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .project-description-container p {
+    text-align: center;
+  }
+}

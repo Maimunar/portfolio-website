@@ -78,3 +78,20 @@
   stroke: var(--white);
   fill: var(--white);
 }
+
+@media (max-width: 450px) {
+  .introduction h2 {
+    text-align: center;
+  }
+
+  .introduction p {
+    overflow: unset;
+    opacity: 0;
+    animation: appear 2s 2.4s forwards;
+    width: auto;
+  }
+
+  .introduction a {
+    margin-top: 5rem;
+  }
+}
