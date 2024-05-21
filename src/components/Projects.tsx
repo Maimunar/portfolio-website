@@ -93,11 +93,11 @@ const Projects = () => {
         />
         <Project
           alignment="left"
-          title="Functional Exercises"
-          imgSrc="elm.jpg"
-          description="Exercises made into a single-page web application using elm in order to practice problem solving via functional programming languages."
-          technologies={["Functional Programming", "Elm"]}
-          githubLink="https://github.com/Maimunar/functional-programming-exercises-elm"
+          title="Developer Environment"
+          imgSrc="dev-env.png"
+          description="My keyboard-centered neovim/mac setup, fully themed with tokyonight"
+          technologies={["Lua", "Bash", "Neovim", "zsh"]}
+          githubLink="https://github.com/Maimunar/dev-env"
         />
       </section>
     </>
