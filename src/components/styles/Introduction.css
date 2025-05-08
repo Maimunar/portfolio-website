@@ -42,12 +42,12 @@
 
 .introduction h1 {
   margin: 25vh 0 1rem 0;
-  animation: appear 0.5s linear;
+  animation: appear 0.3s linear;
 }
 
 .introduction h2 {
   margin: 1rem 0;
-  animation: bounce 1s linear 0.9s forwards;
+  animation: bounce 0.9s linear 0.3s forwards;
   transform: translateY(-1000px) translateX(-30%) rotate(-30deg);
 }
 
@@ -58,14 +58,14 @@
   white-space: nowrap;
   overflow: hidden;
   width: 10.1em;
-  animation: type 2s steps(60, end) 2.4s backwards;
+  animation: type 1s steps(60, end) 1.3s backwards;
 }
 
 .introduction a {
   position: relative;
   margin-top: 25vh;
   opacity: 0;
-  animation: appear 0.5s linear 4.4s forwards;
+  animation: appear 0.5s linear 2.6s forwards;
 }
 
 .introduction svg * {
